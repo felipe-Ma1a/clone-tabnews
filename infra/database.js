@@ -13,8 +13,8 @@ async function query(queryObject) {
   try {
     const result = await client.query(queryObject);
     return result;
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.error(err);
   } finally {
     await client.end();
   }
